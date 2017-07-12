@@ -1,8 +1,11 @@
 {
     "name": "swagger-patcher",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Patch a swagger document with updated descriptions.",
     "main": "index.js",
+    "bin": {
+        "swagger-patcher": "index.js"
+    },
     "scripts": {
         "pretest": "standard --fix",
         "test": "tape test/test.js | tap-spec"
@@ -12,16 +15,19 @@
         "url": "git+https://arasmus8:2fc8d2ff32968f5b5d899cd4875bdcbda81db294@github.com/byu-oit/swagger-patcher.git"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Aaron Rasmussen <aaron_rasmussen@byu.edu>",
+    "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/byu-oit/swagger-patcher/issues"
     },
     "homepage": "https://github.com/byu-oit/swagger-patcher#readme",
     "devDependencies": {
-        "lodash": "^4.17.4",
         "standard": "^10.0.2",
         "tap-spec": "^4.1.1",
         "tape": "^4.7.0"
+    },
+    "dependencies": {
+        "lodash": "^4.17.4",
+        "async": "^2.5.0"
     }
 }

@@ -1,4 +1,4 @@
-const {patch} = require('../lib/patcher')
+const patch = require('../lib/patcher')
 const test = require('tape')
 
 const testData = require('./testData')
